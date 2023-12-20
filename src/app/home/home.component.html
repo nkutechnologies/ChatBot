@@ -1,0 +1,30 @@
+<p class="h2 text-center ">ChatBotAi</p>
+<div class="container-fluid d-flex justify-content-center prompt-position with-box-shadow">
+    <nav class="navbar text-center fixed-bottom navbar-expand-lg bg-transparent navbar-dark">
+        <div class="col-lg-6 col-md-8 col-sm-10 col-12 mx-auto">
+            <div class="input-group">
+                <input [(ngModel)]="value" (keyup.enter)="sendMessage()" type="text" class="p-3 prompt form-control border-none" placeholder="Send a message">
+                <button class="btn btn-sm btn-adj btn-outline-dark" (click)="sendMessage()"><i class="fa fa-paper-plane pe-2"></i></button>
+            </div>
+        </div>
+    </nav>
+</div>
+<ngx-spinner bdColor="rgba(51, 51, 51, 0.8)" size="medium" color="#fff" type="ball-clip-rotate" >
+  <img src="/assets/images/loading-gif.gif" width="100px">
+</ngx-spinner>
+<div class="chat-container">
+  <div *ngFor="let message of messages" class="message">     
+    <div *ngIf="message.author === 'user'" class="user-message">
+      <div class="message-content">
+        <img class="user-image" src="/assets/images/userimg.png" alt="User" />
+        <span class="text">{{ message.content }}</span>
+      </div>
+    </div>
+    <div *ngIf="message.author === 'bot'" class="bot-message">
+      <div class="message-content">
+        <img class="bot-image" src="/assets/images/download.png" alt="bot" />
+        <span class="text">{{ message.content }}</span>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,85 @@
+.btn-adj:hover {
+    background-color: #1a1818;
+    color: #fff;
+}
+
+.btn-adj {
+    background-color: #fff;
+    color: #000;
+}
+
+.h2 {
+    background-color: #513976;
+    color: #fff;
+    padding: 10px;
+}
+
+.message {
+    position: relative;
+    font-size: 13px;
+    padding: 10px 10px;
+    margin: 10px 10px;
+    justify-content: center;
+}
+
+.message.to {
+    background-color: #f5f5f5;
+    color: #0F172A;
+    padding: 10px 18px;
+    border-radius: 50px;
+    width: 50%;
+    margin-left: 400px;
+    justify-content: center;
+
+}
+
+.message.from {
+    background-color: #513976;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 50px;
+    width: 50%;
+    margin-left: 65px;
+    justify-content: center;
+}
+
+.user-message {
+    background-color: #513976;
+    color: #fff;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.bot-message {
+    background-color: #fff;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.chat-container {
+    height: 420px;
+    overflow-y: scroll;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 10px;
+    justify-content: center;
+
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.user-image {
+    width: 40px;
+    height: 40px;
+    margin-right: 5px;
+
+}
+
+.bot-image {
+    width: 40px;
+    height: 40px;
+    margin-right: 5px;
+}
+
+.text {
+    margin: 0;
+}
